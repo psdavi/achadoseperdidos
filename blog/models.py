@@ -24,3 +24,4 @@ class Post(models.Model):
         return self.body[:50]+'...'
 
 post_image = Post("/media")
+thumb = models.ImageField(upload_to=post_image)
